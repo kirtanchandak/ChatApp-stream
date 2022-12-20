@@ -55,7 +55,7 @@ function App() {
     return () => {
       if (chatClient) chatClient.disconnect();
     };
-  }, []);
+  }, [users.id]);
 
   if (!chatClient || !channel) return <div></div>;
   return (
